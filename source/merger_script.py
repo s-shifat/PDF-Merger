@@ -1,7 +1,7 @@
 from PyPDF2 import PdfFileMerger
 import os
 
-pdfs = os.listdir('samples')
+pdfs = os.listdir('../samples')
 
 def i_Merge(pdfs):
     print(pdfs)
