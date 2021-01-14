@@ -1,4 +1,4 @@
-# mrg-pdf
+# PDF Merger
 
 This is a very simple gui program to merge two or more 
 pdf files into one.
