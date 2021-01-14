@@ -1,14 +1,16 @@
 from PyPDF2 import PdfFileMerger
+import os
 
-pdfs = [str(i) + ".pdf" for i in range(1,13)]
-addings = ["example19.2_Garg.pdf","Maliha-Mam-4-Assignments.pdf"]
+pdfs = os.listdir('./pdfs')
+addings = []
 if len(addings)>0:
     [pdfs.append(file) for file in addings]
 print(pdfs)
 merger = PdfFileMerger(False)
 
 for pdf in pdfs:
-    merger.append(pdf)
+    current_file = ".\\pdfs\\" + pdf
+    merger.append(current_file)
 
 merger.write("result.pdf")
 merger.close()
