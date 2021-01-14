@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from PyPDF2 import PdfFileMerger
+import os
 
 
 # widgets............
@@ -47,13 +48,26 @@ def browsefunc():
 
 def merge():
     i_Merge(files)
+    root.destroy()
+
+
+def op():
+    os.system('explorer .')
+    root.destroy()
 
 
 b1 = Button(root, text="Load", font=40, command=browsefunc)
 b1.grid(row=2, column=4)
 
 merger_button = Button(root, text="Merge", font=40, command=merge)
-merger_button.grid(row=2,column=5)
+merger_button.grid(row=2, column=5)
+root.mainloop()
+
+root = Tk()
+root.geometry('250x150+15+15')
+Label(root, text="Done!").pack(padx=15, pady=20)
+openExport = Button(root, text="Open Folder", command=op)
+openExport.pack(padx=10, pady=30)
 root.mainloop()
 
 print(files)
