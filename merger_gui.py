@@ -4,6 +4,7 @@ from PyPDF2 import PdfFileMerger
 import os
 
 
+# Tkinter mini cheatsheet
 # widgets............
 # Labels -- used to display text and images, display purpose only
 #        -- can't be edited, kinda like print function
@@ -63,6 +64,7 @@ merger_button = Button(root, text="Merge", font=40, command=merge)
 merger_button.grid(row=2, column=5)
 root.mainloop()
 
+# Exit Screen
 root = Tk()
 root.geometry('250x150+15+15')
 Label(root, text="Done!").pack(padx=15, pady=20)
@@ -70,4 +72,3 @@ openExport = Button(root, text="Open Folder", command=op)
 openExport.pack(padx=10, pady=30)
 root.mainloop()
 
-print(files)
