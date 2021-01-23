@@ -1,9 +1,7 @@
 from PyPDF2 import PdfFileMerger
 import os
 
-pdfs = os.listdir('../samples')
-
-def i_Merge(pdfs):
+def merger(pdfs):
     print(pdfs)
     merger = PdfFileMerger(False)
 
@@ -13,3 +11,8 @@ def i_Merge(pdfs):
 
     merger.write("result.pdf")
     merger.close()
+    
+if __name__ == '__main__':
+    pdfs = os.listdir('../samples')
+    merger(pdfs)
+    
