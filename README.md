@@ -4,7 +4,13 @@ This is a very simple gui program to merge two or more
 pdf files into one.<br>
 
 
-[![PDF Merger Demo V1.1](./demo/demo-v1_1.gif)](https://youtu.be/tos6T_d9Wog "PDF Merger V1.1 Demo")
+<!-- [![PDF Merger Demo V1.1](./demo/demo-v1_1.gif)](https://youtu.be/tos6T_d9Wog "PDF Merger V1.1 Demo") -->
+<div align="center">
+      <a href="https://youtu.be/tos6T_d9Wog">
+         <img src="./demo/demo-v1_1.gif" style="width:100%;">
+      </a>
+</div>
+
 ## Requirements
 
 1. Python3.x
