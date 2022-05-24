@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ```
 All set now you're good to go.
 
-# Run The Script
+## Run The Script
 
 Simply do:
 ```bash
