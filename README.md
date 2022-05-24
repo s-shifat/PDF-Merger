@@ -53,7 +53,9 @@ All set now you're good to go.
 
 ## Run The Script
 
-Simply do:
+The `[./source/main_gui.py](main_gui.py)` is responsible for this GUI program.
+<br>So Simply do:
+
 ```bash
 python3 source/main_gui.py
 ```
