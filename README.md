@@ -53,7 +53,7 @@ All set now you're good to go.
 
 ## Run The Script
 
-The `[./source/main_gui.py](main_gui.py)` is responsible for this GUI program.
+The [`main_gui.py`](./source/main_gui.py) is responsible for this GUI program and contatins all the code.
 <br>So Simply do:
 
 ```bash
