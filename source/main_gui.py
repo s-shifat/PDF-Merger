@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter import filedialog as fd
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 from subprocess import Popen
 import os
 import platform
@@ -24,7 +24,7 @@ def merge_pdfs(pdfs, output_file_path='result.pdf'):
     returns None
     '''
     # print(pdfs)
-    merger = PdfFileMerger(False)
+    merger = PdfMerger(False)
 
     for pdf in pdfs:
         merger.append(pdf)
@@ -68,27 +68,27 @@ class MergerGUI(Tk):
         self.title(self.WINDOW_TITLE)
 
         # add label
-        self.label = Label(self, text=self.FILE_SELECTION_LABEL, font=20)
+        self.label = Label(self, text=self.FILE_SELECTION_LABEL)
 
         # add entry box
-        self.entry_box = Text(self, font=40)
+        self.entry_box = Text(self)
 
         # add load button
         self.load_button = Button(
             self, text=self.CLEAR_BUTTON_TEXT,
-            font=40, command=self.clear_func
+            command=self.clear_func
         )
 
         # add clear input button
         self.clear_button = Button(
             self, text=self.LOAD_BUTTON_TEXT,
-            font=40, command=self.browsefunc
+            command=self.browsefunc
         )
 
         # add merger button
         self.merger_button = Button(
             self, text=self.MERGER_BUTTON_TEXT,
-            font=40, command=self.mergefunc
+            command=self.mergefunc
         )
 
         # position the components
