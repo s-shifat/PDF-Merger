@@ -62,6 +62,8 @@ python3 source/main_gui.py
 
 
 
- I have also provided two sample pdfs in directory [samples](https://github.com/s-shifat/mrg-pdf/tree/main/samples) If you need to test them<br>
+ I have also provided two sample pdfs in directory [samples](https://github.com/s-shifat/mrg-pdf/tree/main/samples) If you need to test them
+
+
 ###### Also if you need, feel free to clone the repository to modify the source code.
 
