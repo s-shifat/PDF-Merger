@@ -14,7 +14,7 @@ pdf files into one.<br>
 </div>
 
 
-<!-- [Watch Demo at YouTube](https://youtu.be/tos6T_d9Wog) -->
+[Watch Demo at YouTube](https://youtu.be/tos6T_d9Wog)
 
 
 ## Requirements
@@ -66,4 +66,6 @@ python3 source/main_gui.py
 
 
 ###### Also if you need, feel free to clone the repository to modify the source code.
+
+
 
