@@ -14,7 +14,6 @@ pdf files into one.<br>
 </div>
 
 
-[Watch Demo at YouTube](https://youtu.be/tos6T_d9Wog)
 
 
 ## Requirements
